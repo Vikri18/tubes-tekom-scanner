@@ -83,7 +83,7 @@
     <script>
       $("#sample_code").click(() => {
           console.log("terklik")
-          var sample_code = "program bil_genap;\nuses crt;\nvar bil1,bil2:integer;\nbegin clrscr;\nwriteln('=================');\nwriteln('Program Tes Scanner');\nwriteln('=================');\nwriteln('');\nwrite('Masukan Bilangan Pertama : ');\nreadln(bil1);\nwrite('Masukan Bilangan Kedua : ');\nreadln(bil2);\nwrite('Bilangan Genap Yang Ditemukan : ');\nfor bil1:=bil1 to bil2 do\nbegin\nif (bil1 mod 2 = 0) then\nbegin\n write(bil1,' ');\n end;\nend;\nreadln;\nend.";
+          var sample_code = "program Percabangan_1;\nvar\nbil : integer;\nbegin\nwrite ('Masukan Bilangan : ');\nread(bil);\nif (bil mod 2 = 0) then\nbegin\nwriteln ('Bilangan Genap');\nend\nelse\nbegin\nwriteln ('Bilangan Ganjil');\nend;\nend.";
           $("#hasilanalisis").text(sample_code)
       })
 
